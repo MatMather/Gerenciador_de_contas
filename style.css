@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 340px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: none;
+  background: #2b7a78;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #205e5c;
+}
+
+button:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+}
+
+#clearBtn {
+  background: #e07a5f;
+}
+
+#clearBtn:hover {
+  background: #b65c42;
+}
+
+#logoutBtn {
+  background: #b71c1c;
+}
+
+#logoutBtn:hover {
+  background: #8c1515;
+}
+
+#savedNotes {
+  margin-top: 10px;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.note-text {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.delete-btn {
+  background: #d62828;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #a22020;
+}
+
+#noteCount {
+  font-style: italic;
+  color: #555;
+  margin-top: 6px;
+}
